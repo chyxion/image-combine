@@ -311,7 +311,7 @@ public class ImageCombine {
 		log.debug("Draw Circle With Line Width [{}] On Image.", lineWidth);
 		g2d.setStroke(new BasicStroke(lineWidth)); 
 		int x = lineWidth / 2, y = x;
-		int d = size - lineWidth - 1;
+		int d = size - lineWidth;
 		g2d.drawOval(x, y, d, d);
 		g2d.dispose();
 		imageRtn.flush();

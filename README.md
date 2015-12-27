@@ -34,17 +34,14 @@
 
 ### Use In Code
 ```java
-    StringBuilder html = new StringBuilder();
-    Scanner s = new Scanner(
-    	getClass().getResourceAsStream("/sample.html"), "utf-8");
-    while (s.hasNext()) {
-    	html.append(s.nextLine());
-    }
-    s.close();
-    FileOutputStream fout = new FileOutputStream("data.xls");
-    fout.write(TableToXls.process(html));
-    fout.close();
+    saveImage(ic.combine(
+        readImage("joker.jpg"), 
+        readImage("lufy.png"), 
+        readImage("zoro.png"), 
+        size),
+    "combine-3.png");
 ```
+See test cases to get more info.
 
 ## Contacts
 
