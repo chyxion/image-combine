@@ -194,7 +194,7 @@ public class ImageCombine {
 					RenderingHints.VALUE_ANTIALIAS_ON);
 				g2dTopLeft.setComposite(AlphaComposite.Clear);
 				g2dTopLeft.fillPolygon(new Polygon(new int[] {0, size, 0}, 
-					new int[] {0, 0, size}, 3));
+					new int[] {0, size, size}, 3));
 				g2dTopLeft.dispose();
 				imageTopLeft.flush();
 				log.debug("Redraw Top Left Image To [0]:[0].");
