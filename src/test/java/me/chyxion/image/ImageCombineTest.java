@@ -16,10 +16,11 @@ import java.awt.image.BufferedImage;
  * chyxion@163.com <br />
  * Dec 26, 2015 8:22:03 PM
  */
-public class TestDriver {
+public class ImageCombineTest {
 	private static final Logger log = 
-		LoggerFactory.getLogger(TestDriver.class);
+		LoggerFactory.getLogger(ImageCombineTest.class);
 	private ImageCombine ic = new ImageCombine();
+	private int size = 256;
 
 	/**
 	 * NOTE: test results in dir targets
@@ -30,17 +31,17 @@ public class TestDriver {
 		saveImage(ic.combine(
 			readImage("joker.jpg"), 
 			readImage("lufy.png"), 
-			512),
+			size),
 		"combine-2.png");
 	}
 
 	@Test
 	public void testCombineImage3() {
 		saveImage(ic.combine(
-			readImage("joker.png"), 
+			readImage("joker.jpg"), 
 			readImage("lufy.png"), 
 			readImage("zoro.png"), 
-			512),
+			size),
 		"combine-3.png");
 	}
 
@@ -51,7 +52,7 @@ public class TestDriver {
 			readImage("gemily.png"), 
 			readImage("lufy.png"), 
 			readImage("zoro.png"), 
-			512),
+			size),
 		"combine-4.png");
 	}
 
@@ -63,7 +64,7 @@ public class TestDriver {
 			readImage("joker.jpg"), 
 			readImage("lufy.png"), 
 			readImage("zoro.png"), 
-			512),
+			size),
 		"combine-5.png");
 	}
 
