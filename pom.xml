@@ -28,6 +28,12 @@
 		</developer>
 	</developers>
 
+    <scm>
+        <connection>scm:git:https://github.com/chyxion/image-combine.git</connection>
+        <developerConnection>scm:git:git@github.com:chyxion/image-combine.git</developerConnection>
+        <url>https://github.com/chyxion/image-combine</url>
+    </scm>
+
     <dependencies>
         <dependency>
             <groupId>org.imgscalr</groupId>
