@@ -1,17 +1,17 @@
 #Image Combine
 
 ## Preview
-2 Images
-![Combine 2 Images](doc/images/combine-2.png)
+### 2 Images
+![Combine 2 Images](/doc/images/combine-2.png)
 
-3 Images
-![Combine 3 Images](doc/images/combine-3.png)
+### 3 Images
+![Combine 3 Images](/doc/images/combine-3.png)
 
-4 Images
-![Combine 4 Images](doc/images/combine-4.png) 
+### 4 Images
+![Combine 4 Images](/doc/images/combine-4.png) 
 
-5 Images
-![Combine 5 Images](doc/images/combine-5.png)
+### 5 Images
+![Combine 5 Images](/doc/images/combine-5.png)
 
 ## Usage
 ### Add Maven Repository
