@@ -17,8 +17,8 @@ import java.awt.image.BufferedImage;
 /**
  * @version 0.0.1
  * @since 0.0.1
- * @author Shaun Chyxion <br />
- * chyxion@163.com <br />
+ * @author Shaun Chyxion <br>
+ * chyxion@163.com <br>
  * Dec 20, 2015 7:45:33 PM
  */
 public class ImageCombine {
@@ -27,10 +27,10 @@ public class ImageCombine {
 
 	/**
 	 * combine 2 images
-	 * @param left
-	 * @param right
-	 * @param size
-	 * @return
+	 * @param left left image
+	 * @param right right image
+	 * @param size result image size
+	 * @return result image
 	 */
 	public BufferedImage combine(
 			final BufferedImage left, 
@@ -67,11 +67,11 @@ public class ImageCombine {
 
 	/**
 	 * combine 3 images
-	 * @param top
-	 * @param right
-	 * @param left
-	 * @param size
-	 * @return
+	 * @param top top image
+	 * @param right right image
+	 * @param left left image
+	 * @param size result image size
+	 * @return result image
 	 */
 	public BufferedImage combine(
 			final BufferedImage top, 
@@ -133,12 +133,12 @@ public class ImageCombine {
 
 	/**
 	 * combine 4 images
-	 * @param topRight
-	 * @param bottomRight
-	 * @param bottomLeft
-	 * @param topLeft
-	 * @param size
-	 * @return
+	 * @param topRight top right image
+	 * @param bottomRight bottom right image
+	 * @param bottomLeft bottom left image
+	 * @param topLeft top left image
+	 * @param size result image size
+	 * @return result image
 	 */
 	public BufferedImage combine(
 			final BufferedImage topRight, 
@@ -205,13 +205,13 @@ public class ImageCombine {
 
 	/**
 	 * combine 5 images
-	 * @param top
-	 * @param topRight
-	 * @param bottomRight
-	 * @param bottomLeft
-	 * @param topLeft
-	 * @param size
-	 * @return
+	 * @param top top image
+	 * @param topRight top right image
+	 * @param bottomRight bottom right image
+	 * @param bottomLeft bottom left image
+	 * @param topLeft top left image
+	 * @param size result image size
+	 * @return result image
 	 */
 	public BufferedImage combine(
 			final BufferedImage top, 
@@ -294,9 +294,9 @@ public class ImageCombine {
 
 	/**
 	 * wrap image with white circle
-	 * @param image
-	 * @param size
-	 * @return
+	 * @param image image to wrap
+	 * @param size result image size
+	 * @return result image
 	 */
 	public BufferedImage wrapWhiteCircle(BufferedImage image, int size) {
 		log.debug("Wrap White Circle To Size [{}].", size);
@@ -321,8 +321,8 @@ public class ImageCombine {
 
 	/**
 	 * crop image to circle
-	 * @param image
-	 * @return
+	 * @param image image to crop
+	 * @return result image
 	 */
 	public BufferedImage cropToCircle(BufferedImage image) {
 		log.info("Crop Image To Circle, Try To Crop It To Square First.");
@@ -355,8 +355,8 @@ public class ImageCombine {
 	
 	/**
 	 * combine image
-	 * @param op
-	 * @return
+	 * @param op image operator
+	 * @return result image
 	 */
 	protected BufferedImage combine(Op op) {
 		int canvasSize = op.canvasSize();
@@ -378,9 +378,9 @@ public class ImageCombine {
 
 	/**
 	 * resize image
-	 * @param image
-	 * @param size
-	 * @return
+	 * @param image image to resize
+	 * @param size result image size
+	 * @return result image
 	 */
 	protected BufferedImage resize(BufferedImage image, int size) {
 		if (size == image.getWidth() && 
@@ -394,8 +394,8 @@ public class ImageCombine {
 
 	/**
 	 * crop image to square by shorter side
-	 * @param image
-	 * @return
+	 * @param image image to crop
+	 * @return result image
 	 */
 	public BufferedImage cropToSquare(final BufferedImage image) {
 		int width = image.getWidth();
@@ -421,8 +421,8 @@ public class ImageCombine {
 
 	/**
 	 * return image's around circle line width
-	 * @param size
-	 * @return
+	 * @param size image size
+	 * @return line width
 	 */
 	protected int lineWidth(int size) {
 		int v = size / 11;
@@ -432,8 +432,8 @@ public class ImageCombine {
 
 	/**
 	 * return 2 circle images' cross length
-	 * @param size
-	 * @return
+	 * @param size image size
+	 * @return cross length
 	 */
 	protected float crossLength(int size) {
 		float v = lineWidth(size) * 2.1f;
@@ -443,8 +443,8 @@ public class ImageCombine {
 	
 	/**
 	 * ceil double and cast to int
-	 * @param v
-	 * @return
+	 * @param v double value
+	 * @return ceil double and cast to int value
 	 */
 	protected int ceilInt(double v) {
 		return (int) Math.ceil(v);
@@ -452,8 +452,8 @@ public class ImageCombine {
 
 	/**
 	 * Math#sin for degree
-	 * @param v
-	 * @return
+	 * @param v degree value
+	 * @return sin(degree) value
 	 */
 	protected double sinDegree(int v) {
 		return Math.sin(degreeToRadian(v));
@@ -461,8 +461,8 @@ public class ImageCombine {
 
 	/**
 	 * Math#cos for degree
-	 * @param v
-	 * @return
+	 * @param v degree value
+	 * @return cos(degree) value
 	 */
 	protected double cosDegree(int v) {
 		return Math.cos(degreeToRadian(v));
@@ -470,8 +470,8 @@ public class ImageCombine {
 
 	/**
 	 * Math#tan for degree
-	 * @param v
-	 * @return
+	 * @param v degree value
+	 * @return tan(degree) value
 	 */
 	protected double tanDegree(int v) {
 		return Math.tan(degreeToRadian(v));
@@ -479,8 +479,8 @@ public class ImageCombine {
 
 	/**
 	 * convert degree to radian
-	 * @param v
-	 * @return
+	 * @param v degree value
+	 * @return radian value
 	 */
 	protected double degreeToRadian(double v) {
 		double r = 2 * Math.PI / 360 * v;
@@ -493,20 +493,18 @@ public class ImageCombine {
 	 */
 	protected static interface Op {
 		/**
-		 * return target size
-		 * @return
+		 * @return result image size
 		 */
 		int size();
 
 		/**
-		 * return canvas size
-		 * @return
+		 * @return canvas size
 		 */
 		int canvasSize();
 		
 		/**
 		 * process Graphics2D 
-		 * @param g2d
+		 * @param g2d graphics 2d to process
 		 */
 		void process(Graphics2D g2d);
 	}

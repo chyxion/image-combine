@@ -14,14 +14,6 @@
 ![Combine 5 Images](/doc/images/combine-5.png)
 
 ## Usage
-### Add Maven Repository
-```xml
-    <repository>
-    	<id>chyxion-github</id>
-    	<name>Chyxion Github</name>
-    	<url>http://chyxion.github.io/maven/</url>
-    </repository>
-```
 
 ### Add Maven Dependency
 ```xml
@@ -43,6 +35,6 @@
 ```
 See test cases to get more info.
 
-## Contacts
+## Contact
 
 chyxion@163.com
