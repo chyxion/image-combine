@@ -78,6 +78,7 @@
         </dependency>
     </dependencies>
 
+<<<<<<< HEAD
     <profiles>
         <profile>
             <id>release</id>
